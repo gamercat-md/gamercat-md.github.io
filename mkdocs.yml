@@ -1,0 +1,18 @@
+site_name: Правила хойки
+
+theme:
+  name: material
+  palette:
+    scheme: default  
+    toggle:
+      icon: material/weather-night  
+      name: Темная тема
+
+extra_css:
+  - css/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.details
+

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body, input {
+  font-family: 'Open Sans', -apple-system, Helvetica, Arial, sans-serif;
+}
+
+code, pre {
+  font-family: 'Roboto Mono', monospace; /* можно оставить стандартный моноширинный */
+}

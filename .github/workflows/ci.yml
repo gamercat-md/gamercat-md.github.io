@@ -7,13 +7,13 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+    GH_TOKEN: ${{ secrets.mkdocs-gh-deploy }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
       - run: pip install mkdocs-material
-      env:
-          GH_TOKEN: ${{ secrets.mkdocs-gh-deploy }}
       - run: mkdocs gh-deploy --force
 
